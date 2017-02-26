@@ -16,7 +16,4 @@ def createTest(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-
-    else:
-        form = forms.Apt_TestForm()
     return render(request, 'question/createTest.html', {'form': form})
