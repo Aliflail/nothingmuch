@@ -11,8 +11,8 @@ def home(request):
 
 
 def createTest(request):
+    form = forms.Apt_TestForm(request.POST or None)
     if (request.method == "POST"):
-        form = forms.Apt_TestForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()

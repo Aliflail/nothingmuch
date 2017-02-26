@@ -2,7 +2,8 @@
 {% block body %}
 
 <form action="." method="post">{% csrf_token %}
-{{Apt_TestForm}}
+	<!-- this prints it as a paragraph style  -->
+{{form.as_p}}
     <input type="submit" value="Create Test"/>
 </form>
 {{question}}
