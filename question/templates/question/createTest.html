@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form action="." method="post">{% csrf_token %}
+{{Apt_TestForm}}
+    <input type="submit" value="Create Test"/>
+</form>
+{{question}}
+{% endblock %}
