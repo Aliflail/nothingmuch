@@ -16,7 +16,6 @@ class testcases(models.Model):
       test_out=models.TextField(max_length=1000, default='No Output')
       question_id=models.ForeignKey(prog_ques,on_delete=models.CASCADE)
 
-
 class answer(models.Model):
       uid=models.CharField(max_length=256)
       tid=models.IntegerField()
